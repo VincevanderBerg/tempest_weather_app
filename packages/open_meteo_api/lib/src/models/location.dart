@@ -2,6 +2,11 @@
 //
 // This model should store data returned by the location API.
 
+import 'package:json_annotation/json_annotation.dart';
+
+part 'location.g.dart';
+
+@JsonSerializable()
 class Location {
   const Location({
     required this.id,
@@ -9,6 +14,9 @@ class Location {
     required this.latitude,
     required this.longitude,
   });
+
+  factory Location.fromJson(Map<String, dynamic> json) =>
+      _$LocationFromJson(json);
 
   final int id;
   final String name;
