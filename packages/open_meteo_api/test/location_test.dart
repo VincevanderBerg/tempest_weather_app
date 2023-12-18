@@ -15,10 +15,10 @@ void main() {
             },
           ),
           isA<Location>()
-              .having((w) => w.id, 'id', 4887398)
-              .having((w) => w.name, 'name', 'Chicago')
-              .having((w) => w.latitude, 'latitude', 41.85003)
-              .having((w) => w.longitude, 'longitude', -87.65005),
+              .having((l) => l.id, 'id', 4887398)
+              .having((l) => l.name, 'name', 'Chicago')
+              .having((l) => l.latitude, 'latitude', 41.85003)
+              .having((l) => l.longitude, 'longitude', -87.65005),
         );
       });
     });
